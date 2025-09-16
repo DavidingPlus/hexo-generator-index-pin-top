@@ -7,7 +7,7 @@ describe('Index generator', function () {
   var hexo = new Hexo(__dirname, { silent: true });
   var Post = hexo.model('Post');
   var generator = require('../lib/generator').bind(hexo);
-  var posts;
+  // var posts;
   var locals;
 
   // Default config
@@ -21,7 +21,7 @@ describe('Index generator', function () {
     { source: 'bar', slug: 'bar', date: 1e8 + 1, order: 10 },
     { source: 'baz', slug: 'baz', date: 1e8 - 1, order: 1 }
   ])).then(data => {
-    posts = Post.sort('-date');
+    // posts = Post.sort('-date');
     locals = hexo.locals.toObject();
   }));
 
@@ -87,7 +87,7 @@ describe('Index generator', function () {
 
   describe('order', function () {
     it('default order', function () {
-      var result = generator(locals);
+      // var result = generator(locals);
 
       // result[0].data.posts.should.eql(posts);
     });
