@@ -1,6 +1,9 @@
 {
   "name": "@davidingplus/hexo-generator-index-pin-top",
   "version": "0.2.2",
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "Index generator for Hexo. Pin top version, but normal posts are sorted by updated time, and posts which are pinned to top are sorted in ascending order by number.",
   "main": "index",
   "scripts": {
